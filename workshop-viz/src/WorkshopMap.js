@@ -167,7 +167,10 @@ const WorkshopMap = () => {
                       <text
                         x={point.x}
                         y={point.y}
-                        transform={`rotate(${(angle * 180 / Math.PI) % 360}, ${point.x}, ${point.y})`}
+                        transform={`
+                          rotate(${(angle * 180 / Math.PI) % 360}, ${point.x}, ${point.y})
+                          ${angle > Math.PI / 2 && angle < 3 * Math.PI / 2 ? 'rotate(180,' + point.x + ',' + point.y + ')' : ''}
+                        `}
                         fill="white"
                         fontSize="12"
                         textAnchor={angle > Math.PI / 2 && angle < 3 * Math.PI / 2 ? "end" : "start"}
