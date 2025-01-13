@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/veza-pie/static/css/main.0d1b0f18.css",
+    "main.js": "/veza-pie/static/js/main.5bd36769.js",
+    "static/js/156.cb503731.chunk.js": "/veza-pie/static/js/156.cb503731.chunk.js",
+    "index.html": "/veza-pie/index.html",
+    "main.0d1b0f18.css.map": "/veza-pie/static/css/main.0d1b0f18.css.map",
+    "main.5bd36769.js.map": "/veza-pie/static/js/main.5bd36769.js.map",
+    "156.cb503731.chunk.js.map": "/veza-pie/static/js/156.cb503731.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d1b0f18.css",
+    "static/js/main.5bd36769.js"
+  ]
+}
