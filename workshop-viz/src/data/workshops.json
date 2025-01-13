@@ -1,0 +1,765 @@
+{
+  "workshops": [
+    {
+      "id": 1,
+      "name": "Crypto on Investments $$",
+      "icon": "💰",
+      "primary": "BIZ",
+      "secondary": "TECH",
+      "tags": ["Blockchain & Web3", "Business Strategy", "Data Analytics"]
+    },
+    {
+      "id": 2,
+      "name": "Most Influential Books",
+      "icon": "📚",
+      "primary": "MIND",
+      "secondary": "COMM",
+      "tags": ["Mental Models", "Storytelling", "Leadership"]
+    },
+    {
+      "id": 3,
+      "name": "Pattern Breaking WS",
+      "icon": "🔄",
+      "primary": "MIND",
+      "secondary": "SPIR",
+      "tags": ["Mental Models", "Sacred Connection", "Emotional Intelligence"]
+    },
+    {
+      "id": 4,
+      "name": "Level 3 Comms",
+      "icon": "🗣️",
+      "primary": "COMM",
+      "secondary": "BIZ",
+      "tags": ["Group Facilitation", "Leadership", "Business Strategy"]
+    },
+    {
+      "id": 5,
+      "name": "How to be Free from Money",
+      "icon": "🆓",
+      "primary": "BIZ",
+      "secondary": "MIND",
+      "tags": ["Business Strategy", "Mental Models", "Emotional Intelligence"]
+    },
+    {
+      "id": 6,
+      "name": "Launching Product/Service",
+      "icon": "🚀",
+      "primary": "BIZ",
+      "secondary": "TECH",
+      "tags": ["Business Strategy", "Digital Creation", "Data Analytics"]
+    },
+    {
+      "id": 7,
+      "name": "LA is Burning Story Time",
+      "icon": "🔥",
+      "primary": "COMM",
+      "secondary": "ART",
+      "tags": ["Storytelling", "Creative Process", "Group Facilitation"]
+    },
+    {
+      "id": 8,
+      "name": "Authentic Feedback/Soulmate",
+      "icon": "❤️",
+      "primary": "COMM",
+      "secondary": "SEX",
+      "tags": ["Emotional Intelligence", "Group Facilitation", "Sacred Connection"]
+    },
+    {
+      "id": 9,
+      "name": "Failed Founder WS",
+      "icon": "🔄",
+      "primary": "BIZ",
+      "secondary": "MIND",
+      "tags": ["Business Strategy", "Mental Models", "Leadership"]
+    },
+    {
+      "id": 10,
+      "name": "Learn AI Practical Use",
+      "icon": "🤖",
+      "primary": "TECH",
+      "secondary": "BIZ",
+      "tags": ["AI & Machine Learning", "Business Strategy", "Digital Creation"]
+    },
+    {
+      "id": 11,
+      "name": "Body Work - Love & Yourself",
+      "icon": "💪",
+      "primary": "BOD",
+      "secondary": "MIND",
+      "tags": ["Physical Training", "Somatic Awareness", "Emotional Intelligence"]
+    },
+    {
+      "id": 12,
+      "name": "Improv/Failure",
+      "icon": "🎭",
+      "primary": "ART",
+      "secondary": "MIND",
+      "tags": ["Creative Process", "Mental Models", "Emotional Intelligence"]
+    },
+    {
+      "id": 13,
+      "name": "Community Living",
+      "icon": "🏘️",
+      "primary": "COMM",
+      "secondary": "MIND",
+      "tags": ["Community Building", "Group Facilitation", "Mental Models"]
+    },
+    {
+      "id": 14,
+      "name": "Reverse Your Story",
+      "icon": "📖",
+      "primary": "MIND",
+      "secondary": "SPIR",
+      "tags": ["Storytelling", "Mental Models", "Sacred Connection"]
+    },
+    {
+      "id": 15,
+      "name": "Purpose + Leadership",
+      "icon": "⭐",
+      "primary": "MIND",
+      "secondary": "BIZ",
+      "tags": ["Leadership", "Mental Models", "Business Strategy"]
+    },
+    {
+      "id": 16,
+      "name": "Re-inventing Your Career",
+      "icon": "🔄",
+      "primary": "BIZ",
+      "secondary": "MIND",
+      "tags": ["Business Strategy", "Mental Models", "Leadership"]
+    },
+    {
+      "id": 17,
+      "name": "Coaching Career Advice",
+      "icon": "🎯",
+      "primary": "BIZ",
+      "secondary": "MIND",
+      "tags": ["Leadership", "Mental Models", "Business Strategy"]
+    },
+    {
+      "id": 18,
+      "name": "Impact + Reach w/Authenticity",
+      "icon": "🌟",
+      "primary": "BIZ",
+      "secondary": "MIND",
+      "tags": ["Business Strategy", "Emotional Intelligence", "Leadership"]
+    },
+    {
+      "id": 19,
+      "name": "Healthy Power",
+      "icon": "💫",
+      "primary": "MIND",
+      "secondary": "COMM",
+      "tags": ["Leadership", "Emotional Intelligence", "Group Facilitation"]
+    },
+    {
+      "id": 20,
+      "name": "Psychedelic Medicine",
+      "icon": "🍄",
+      "primary": "SPIR",
+      "secondary": "BOD",
+      "tags": ["Altered States", "Sacred Connection", "Physical Training"]
+    },
+    {
+      "id": 21,
+      "name": "Expanded Consciousness",
+      "icon": "🌀",
+      "primary": "SPIR",
+      "secondary": "MIND",
+      "tags": ["Altered States", "Mental Models", "Sacred Connection"]
+    },
+    {
+      "id": 22,
+      "name": "Male/Female Breakouts",
+      "icon": "⚥",
+      "primary": "SEX",
+      "secondary": "COMM",
+      "tags": ["Emotional Intelligence", "Group Facilitation", "Sacred Connection"]
+    },
+    {
+      "id": 23,
+      "name": "Fun Yoga/Acro/Laughing",
+      "icon": "🧘‍♀️",
+      "primary": "BOD",
+      "secondary": "SPIR",
+      "tags": ["Movement Practice", "Physical Training", "Sacred Connection"]
+    },
+    {
+      "id": 24,
+      "name": "TANTRA!",
+      "icon": "✨",
+      "primary": "SEX",
+      "secondary": "SPIR",
+      "tags": ["Sacred Connection", "Energy Work", "Somatic Awareness"]
+    },
+    {
+      "id": 25,
+      "name": "Sensual Dinner",
+      "icon": "🍷",
+      "primary": "SEX",
+      "secondary": "BOD",
+      "tags": ["Somatic Awareness", "Sacred Connection", "Physical Training"]
+    },
+    {
+      "id": 26,
+      "name": "Personal Marketing",
+      "icon": "📣",
+      "primary": "BIZ",
+      "secondary": "MIND",
+      "tags": ["Business Strategy", "Digital Creation", "Leadership"]
+    },
+    {
+      "id": 27,
+      "name": "Inner Male/Female",
+      "icon": "☯️",
+      "primary": "SEX",
+      "secondary": "MIND",
+      "tags": ["Emotional Intelligence", "Mental Models", "Sacred Connection"]
+    },
+    {
+      "id": 28,
+      "name": "Osho Dynamic Meditation",
+      "icon": "🧘",
+      "primary": "SPIR",
+      "secondary": "BOD",
+      "tags": ["Meditation", "Movement Practice", "Energy Work"]
+    },
+    {
+      "id": 29,
+      "name": "Net-Positive Day",
+      "icon": "✨",
+      "primary": "COMM",
+      "secondary": "MIND",
+      "tags": ["Group Facilitation", "Mental Models", "Emotional Intelligence"]
+    },
+    {
+      "id": 30,
+      "name": "Sharing Mindsets/Insights",
+      "icon": "🧠",
+      "primary": "MIND",
+      "secondary": "COMM",
+      "tags": ["Mental Models", "Group Facilitation", "Leadership"]
+    },
+    {
+      "id": 31,
+      "name": "Non-Violent Communication Dance",
+      "icon": "💃",
+      "primary": "COMM",
+      "secondary": "BOD",
+      "tags": ["Group Facilitation", "Movement Practice", "Emotional Intelligence"]
+    },
+    {
+      "id": 32,
+      "name": "$ as Movement of Energy",
+      "icon": "💫",
+      "primary": "BIZ",
+      "secondary": "SPIR",
+      "tags": ["Business Strategy", "Energy Work", "Mental Models"]
+    },
+    {
+      "id": 33,
+      "name": "Problem Solving/Decision Making",
+      "icon": "🎯",
+      "primary": "MIND",
+      "secondary": "BIZ",
+      "tags": ["Mental Models", "Business Strategy", "Leadership"]
+    },
+    {
+      "id": 34,
+      "name": "Technical Trading",
+      "icon": "📊",
+      "primary": "BIZ",
+      "secondary": "TECH",
+      "tags": ["Data Analytics", "Business Strategy", "Digital Creation"]
+    },
+    {
+      "id": 35,
+      "name": "Blockchain Mining",
+      "icon": "⛏️",
+      "primary": "TECH",
+      "secondary": "BIZ",
+      "tags": ["Blockchain & Web3", "Digital Creation", "Business Strategy"]
+    },
+    {
+      "id": 36,
+      "name": "Group Project Dynamics",
+      "icon": "👥",
+      "primary": "COMM",
+      "secondary": "BIZ",
+      "tags": ["Group Facilitation", "Leadership", "Business Strategy"]
+    },
+    {
+      "id": 37,
+      "name": "Eudaimonia Communities",
+      "icon": "🌟",
+      "primary": "COMM",
+      "secondary": "SPIR",
+      "tags": ["Community Building", "Sacred Connection", "Group Facilitation"]
+    },
+    {
+      "id": 38,
+      "name": "Blockchain Co-Living",
+      "icon": "🏘️",
+      "primary": "TECH",
+      "secondary": "COMM",
+      "tags": ["Blockchain & Web3", "Community Building", "Digital Creation"]
+    },
+    {
+      "id": 39,
+      "name": "Fundraising",
+      "icon": "💰",
+      "primary": "BIZ",
+      "secondary": "COMM",
+      "tags": ["Business Strategy", "Leadership", "Group Facilitation"]
+    },
+    {
+      "id": 40,
+      "name": "Health CRM Canvas",
+      "icon": "📊",
+      "primary": "TECH",
+      "secondary": "BOD",
+      "tags": ["Digital Creation", "Data Analytics", "Physical Training"]
+    },
+    {
+      "id": 41,
+      "name": "Truth-Seeking Together",
+      "icon": "🔍",
+      "primary": "SPIR",
+      "secondary": "COMM",
+      "tags": ["Sacred Connection", "Group Facilitation", "Mental Models"]
+    },
+    {
+      "id": 42,
+      "name": "Beach Workout",
+      "icon": "🏖️",
+      "primary": "BOD",
+      "secondary": "COMM",
+      "tags": ["Physical Training", "Movement Practice", "Group Facilitation"]
+    },
+    {
+      "id": 43,
+      "name": "Unlocking Inner Genius",
+      "icon": "🔓",
+      "primary": "MIND",
+      "secondary": "SPIR",
+      "tags": ["Mental Models", "Sacred Connection", "Creative Process"]
+    },
+    {
+      "id": 44,
+      "name": "Transcending/Surviving",
+      "icon": "🦋",
+      "primary": "MIND",
+      "secondary": "SPIR",
+      "tags": ["Mental Models", "Sacred Connection", "Emotional Intelligence"]
+    },
+    {
+      "id": 45,
+      "name": "Production of Creative Ideas",
+      "icon": "💡",
+      "primary": "ART",
+      "secondary": "BIZ",
+      "tags": ["Creative Process", "Business Strategy", "Digital Creation"]
+    },
+    {
+      "id": 46,
+      "name": "Planning",
+      "icon": "📋",
+      "primary": "BIZ",
+      "secondary": "MIND",
+      "tags": ["Business Strategy", "Mental Models", "Leadership"]
+    },
+    {
+      "id": 47,
+      "name": "Talking to an Error",
+      "icon": "🔧",
+      "primary": "TECH",
+      "secondary": "MIND",
+      "tags": ["AI & Machine Learning", "Mental Models", "Digital Creation"]
+    },
+    {
+      "id": 48,
+      "name": "Programming Power",
+      "icon": "💻",
+      "primary": "TECH",
+      "secondary": "BIZ",
+      "tags": ["Digital Creation", "Business Strategy", "Data Analytics"]
+    },
+    {
+      "id": 49,
+      "name": "Custom Business Offer",
+      "icon": "🎯",
+      "primary": "BIZ",
+      "secondary": "TECH",
+      "tags": ["Business Strategy", "Digital Creation", "Data Analytics"]
+    },
+    {
+      "id": 50,
+      "name": "Business-Building",
+      "icon": "🏗️",
+      "primary": "BIZ",
+      "secondary": "COMM",
+      "tags": ["Business Strategy", "Leadership", "Community Building"]
+    },
+    {
+      "id": 51,
+      "name": "Quantum Breakthrough",
+      "icon": "⚛️",
+      "primary": "SPIR",
+      "secondary": "MIND",
+      "tags": ["Sacred Connection", "Mental Models", "Energy Work"]
+    },
+    {
+      "id": 52,
+      "name": "TMJ Therapy",
+      "icon": "🦷",
+      "primary": "BOD",
+      "secondary": "MIND",
+      "tags": ["Physical Training", "Somatic Awareness", "Mental Models"]
+    },
+    {
+      "id": 53,
+      "name": "Healthcare",
+      "icon": "⚕️",
+      "primary": "BOD",
+      "secondary": "MIND",
+      "tags": ["Physical Training", "Mental Models", "Somatic Awareness"]
+    },
+    {
+      "id": 54,
+      "name": "Finding Inversions",
+      "icon": "🙃",
+      "primary": "MIND",
+      "secondary": "BOD",
+      "tags": ["Mental Models", "Physical Training", "Movement Practice"]
+    },
+    {
+      "id": 55,
+      "name": "Divine Alt-Health",
+      "icon": "✨",
+      "primary": "BOD",
+      "secondary": "SPIR",
+      "tags": ["Physical Training", "Sacred Connection", "Energy Work"]
+    },
+    {
+      "id": 56,
+      "name": "Digital Workspace Marketing",
+      "icon": "💻",
+      "primary": "TECH",
+      "secondary": "BIZ",
+      "tags": ["Digital Creation", "Business Strategy", "Data Analytics"]
+    },
+    {
+      "id": 57,
+      "name": "Increasing Fee per Transaction",
+      "icon": "💲",
+      "primary": "BIZ",
+      "secondary": "TECH",
+      "tags": ["Business Strategy", "Data Analytics", "Digital Creation"]
+    },
+    {
+      "id": 58,
+      "name": "Relationship to Business",
+      "icon": "🤝",
+      "primary": "BIZ",
+      "secondary": "COMM",
+      "tags": ["Business Strategy", "Leadership", "Emotional Intelligence"]
+    },
+    {
+      "id": 59,
+      "name": "Crypto-Web 3",
+      "icon": "₿",
+      "primary": "TECH",
+      "secondary": "BIZ",
+      "tags": ["Blockchain & Web3", "Digital Creation", "Business Strategy"]
+    },
+    {
+      "id": 60,
+      "name": "Clean Energy is BAD",
+      "icon": "⚡",
+      "primary": "MIND",
+      "secondary": "TECH",
+      "tags": ["Mental Models", "Data Analytics", "Critical Thinking"]
+    },
+    {
+      "id": 61,
+      "name": "Choice Design",
+      "icon": "🎯",
+      "primary": "MIND",
+      "secondary": "BIZ",
+      "tags": ["Mental Models", "Business Strategy", "Leadership"]
+    },
+    {
+      "id": 62,
+      "name": "Female Orgasm",
+      "icon": "🌺",
+      "primary": "SEX",
+      "secondary": "BOD",
+      "tags": ["Somatic Awareness", "Sacred Connection", "Physical Training"]
+    },
+    {
+      "id": 63,
+      "name": "What Disease?",
+      "icon": "🔍",
+      "primary": "BOD",
+      "secondary": "MIND",
+      "tags": ["Physical Training", "Mental Models", "Somatic Awareness"]
+    },
+    {
+      "id": 64,
+      "name": "Team Building",
+      "icon": "🤝",
+      "primary": "COMM",
+      "secondary": "BIZ",
+      "tags": ["Group Facilitation", "Leadership", "Community Building"]
+    },
+    {
+      "id": 65,
+      "name": "Book Writing/Launching",
+      "icon": "📚",
+      "primary": "ART",
+      "secondary": "BIZ",
+      "tags": ["Creative Process", "Storytelling", "Business Strategy"]
+    },
+    {
+      "id": 66,
+      "name": "PR/Sales/Performing",
+      "icon": "🎭",
+      "primary": "BIZ",
+      "secondary": "ART",
+      "tags": ["Business Strategy", "Creative Process", "Leadership"]
+    },
+    {
+      "id": 67,
+      "name": "Uplifting Women",
+      "icon": "👭",
+      "primary": "COMM",
+      "secondary": "SEX",
+      "tags": ["Group Facilitation", "Emotional Intelligence", "Leadership"]
+    },
+    {
+      "id": 68,
+      "name": "Conscious Movement",
+      "icon": "💫",
+      "primary": "BOD",
+      "secondary": "SPIR",
+      "tags": ["Movement Practice", "Sacred Connection", "Somatic Awareness"]
+    },
+    {
+      "id": 69,
+      "name": "Ableton Music",
+      "icon": "🎵",
+      "primary": "ART",
+      "secondary": "TECH",
+      "tags": ["Creative Process", "Digital Creation", "Digital Media"]
+    },
+    {
+      "id": 70,
+      "name": "Content Creation",
+      "icon": "🎨",
+      "primary": "ART",
+      "secondary": "TECH",
+      "tags": ["Digital Creation", "Creative Process", "Digital Media"]
+    },
+    {
+      "id": 71,
+      "name": "Discover Your Style",
+      "icon": "🎨",
+      "primary": "MIND",
+      "secondary": "ART",
+      "tags": ["Creative Process", "Mental Models", "Emotional Intelligence"]
+    },
+    {
+      "id": 72,
+      "name": "Unlocking Potential",
+      "icon": "🔓",
+      "primary": "MIND",
+      "secondary": "SPIR",
+      "tags": ["Mental Models", "Sacred Connection", "Leadership"]
+    },
+    {
+      "id": 73,
+      "name": "Quantified Self",
+      "icon": "📊",
+      "primary": "TECH",
+      "secondary": "BOD",
+      "tags": ["Data Analytics", "Physical Training", "Mental Models"]
+    },
+    {
+      "id": 74,
+      "name": "Automation/Marketing",
+      "icon": "🤖",
+      "primary": "TECH",
+      "secondary": "BIZ",
+      "tags": ["Digital Creation", "Business Strategy", "Data Analytics"]
+    },
+    {
+      "id": 75,
+      "name": "Optimizing Workouts",
+      "icon": "💪",
+      "primary": "BOD",
+      "secondary": "TECH",
+      "tags": ["Physical Training", "Data Analytics", "Movement Practice"]
+    },
+    {
+      "id": 76,
+      "name": "Relationship Pattern Breaking",
+      "icon": "💔",
+      "primary": "COMM",
+      "secondary": "MIND",
+      "tags": ["Emotional Intelligence", "Mental Models", "Group Facilitation"]
+    },
+    {
+      "id": 77,
+      "name": "Complex Art Creation",
+      "icon": "🎨",
+      "primary": "ART",
+      "secondary": "MIND",
+      "tags": ["Creative Process", "Mental Models", "Digital Creation"]
+    },
+    {
+      "id": 78,
+      "name": "Disinformation/Brave Space",
+      "icon": "🎭",
+      "primary": "MIND",
+      "secondary": "COMM",
+      "tags": ["Mental Models", "Group Facilitation", "Critical Thinking"]
+    },
+    {
+      "id": 79,
+      "name": "Lightning Talks",
+      "icon": "⚡",
+      "primary": "COMM",
+      "secondary": "ART",
+      "tags": ["Storytelling", "Group Facilitation", "Leadership"]
+    },
+    {
+      "id": 80,
+      "name": "Dinner Pods",
+      "icon": "🍽️",
+      "primary": "COMM",
+      "secondary": "BOD",
+      "tags": ["Group Facilitation", "Community Building", "Somatic Awareness"]
+    },
+    {
+      "id": 81,
+      "name": "Scaling Impact",
+      "icon": "📈",
+      "primary": "BIZ",
+      "secondary": "COMM",
+      "tags": ["Business Strategy", "Leadership", "Community Building"]
+    },
+    {
+      "id": 82,
+      "name": "Contact Improv",
+      "icon": "💃",
+      "primary": "BOD",
+      "secondary": "ART",
+      "tags": ["Movement Practice", "Creative Process", "Somatic Awareness"]
+    },
+    {
+      "id": 83,
+      "name": "Franchising",
+      "icon": "🏪",
+      "primary": "BIZ",
+      "secondary": "TECH",
+      "tags": ["Business Strategy", "Digital Creation", "Data Analytics"]
+    },
+    {
+      "id": 84,
+      "name": "Self Healing",
+      "icon": "🌱",
+      "primary": "BOD",
+      "secondary": "SPIR",
+      "tags": ["Physical Training", "Energy Work", "Sacred Connection"]
+    },
+    {
+      "id": 85,
+      "name": "Public Speaking",
+      "icon": "🎤",
+      "primary": "COMM",
+      "secondary": "ART",
+      "tags": ["Leadership", "Storytelling", "Creative Process"]
+    },
+    {
+      "id": 86,
+      "name": "Conscious Earth",
+      "icon": "🌍",
+      "primary": "SPIR",
+      "secondary": "MIND",
+      "tags": ["Sacred Connection", "Mental Models", "Energy Work"]
+    },
+    {
+      "id": 87,
+      "name": "Hypnotize LLM's",
+      "icon": "🤖",
+      "primary": "TECH",
+      "secondary": "MIND",
+      "tags": ["AI & Machine Learning", "Mental Models", "Digital Creation"]
+    },
+    {
+      "id": 88,
+      "name": "Deepthroating",
+      "icon": "👄",
+      "primary": "SEX",
+      "secondary": "BOD",
+      "tags": ["Physical Training", "Somatic Awareness", "Sacred Connection"]
+    }
+  ],
+  "categories": {
+    "TECH": {
+      "name": "Technology & Digital",
+      "color": "#00BCD4"
+    },
+    "BIZ": {
+      "name": "Business & Finance",
+      "color": "#FF4081"
+    },
+    "BOD": {
+      "name": "Body & Movement",
+      "color": "#7C4DFF"
+    },
+    "MIND": {
+      "name": "Psychology & Personal Development",
+      "color": "#FFD700"
+    },
+    "SEX": {
+      "name": "Sexuality & Intimacy",
+      "color": "#FF6B6B"
+    },
+    "SPIR": {
+      "name": "Spirituality & Consciousness",
+      "color": "#4CAF50"
+    },
+    "COMM": {
+      "name": "Community & Relationships",
+      "color": "#FF9800"
+    },
+    "ART": {
+      "name": "Creativity & Arts",
+      "color": "#E91E63"
+    }
+  },
+  "coreTags": [
+    "AI & Machine Learning",
+    "Blockchain & Web3",
+    "Digital Creation",
+    "Business Strategy",
+    "Data Analytics",
+    "Mental Models",
+    "Emotional Intelligence",
+    "Leadership",
+    "Group Facilitation",
+    "Community Building",
+    "Movement Practice",
+    "Physical Training",
+    "Somatic Awareness",
+    "Sacred Connection",
+    "Energy Work",
+    "Meditation",
+    "Altered States",
+    "Ritual Practice",
+    "Creative Process",
+    "Storytelling",
+    "Digital Media"
+  ]
+} 
