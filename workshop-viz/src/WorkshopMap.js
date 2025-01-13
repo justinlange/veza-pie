@@ -52,7 +52,6 @@ const WorkshopMap = () => {
     );
   };
 
-  // Simplified popup that doesn't list all related workshops
   const WorkshopPopup = ({ workshop }) => (
     <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
                 bg-gray-800 p-6 rounded-lg shadow-xl max-w-sm">
@@ -68,12 +67,26 @@ const WorkshopMap = () => {
           </span>
         ))}
       </div>
-      <button 
-        onClick={() => setSelectedWorkshop(null)}
-        className="absolute top-2 right-2 text-gray-400 hover:text-white"
-      >
-        ✕
-      </button>
+      <div className="flex gap-2 mt-4">
+        <button 
+          onClick={() => setSelectedWorkshop(null)}
+          className="absolute top-2 right-2 text-gray-400 hover:text-white"
+        >
+          ✕
+        </button>
+        <button
+          onClick={() => {
+            const newFavorites = favorites.includes(workshop.id)
+              ? favorites.filter(id => id !== workshop.id)
+              : [...favorites, workshop.id];
+            setFavorites(newFavorites);
+            localStorage.setItem('workshopFavorites', JSON.stringify(newFavorites));
+          }}
+          className="absolute top-2 right-8 text-gray-400 hover:text-white"
+        >
+          {favorites.includes(workshop.id) ? '❤️' : '🤍'}
+        </button>
+      </div>
     </div>
   );
 
@@ -81,6 +94,14 @@ const WorkshopMap = () => {
     <div className="flex flex-col min-h-screen bg-gray-900 p-4">
       {/* Tag filter buttons */}
       <div className="p-4 grid grid-cols-7 gap-2">
+        <button
+          className={`px-3 py-1 rounded-full text-sm ${
+            selectedTag === null ? 'bg-white text-black' : 'bg-gray-800 text-white'
+          }`}
+          onClick={() => setSelectedTag(selectedTag === null ? '' : null)}
+        >
+          Show All
+        </button>
         {workshopData.coreTags.map(tag => (
           <button
             key={tag}
@@ -96,8 +117,8 @@ const WorkshopMap = () => {
 
       {/* Main visualization */}
       <svg viewBox="0 0 1200 1200" className="w-full h-full">
-        {/* Connection lines for selected workshop */}
-        {selectedWorkshop && visibleConnections.map(({ from, to, tags }, index) => {
+        {/* Connection lines */}
+        {visibleConnections.map(({ from, to, tags }, index) => {
           const fromAngle = categories[from.primary].startAngle + 
             (workshops[from.primary].indexOf(from) / workshops[from.primary].length) * 
             (categories[from.primary].endAngle - categories[from.primary].startAngle);
@@ -109,14 +130,13 @@ const WorkshopMap = () => {
           const toPoint = getPointOnCircle(toAngle, outerRadius);
           
           return (
-            <g key={`connection-${index}`}>
-              <path
-                d={`M ${fromPoint.x} ${fromPoint.y} Q ${600} ${600} ${toPoint.x} ${toPoint.y}`}
-                stroke="rgba(255,255,255,0.3)"
-                strokeWidth="2"
-                fill="none"
-              />
-            </g>
+            <path
+              key={`connection-${index}`}
+              d={`M ${fromPoint.x} ${fromPoint.y} Q ${600} ${600} ${toPoint.x} ${toPoint.y}`}
+              stroke="rgba(255,255,255,0.2)"
+              strokeWidth="2"
+              fill="none"
+            />
           );
         })}
 
@@ -139,30 +159,25 @@ const WorkshopMap = () => {
             {workshops[category]?.map((workshop, index) => {
               const angle = startAngle + (index + 0.5) * (endAngle - startAngle) / workshops[category].length;
               const point = getPointOnCircle(angle, outerRadius - 20);
-              
-              // Show workshop if it matches selected tag or is connected to selected workshop
-              const isTagVisible = selectedTag ? workshop.tags.includes(selectedTag) : false;
-              const isConnected = selectedWorkshop ? 
-                workshop.tags.some(tag => selectedWorkshop.tags.includes(tag)) : false;
+              const isTagVisible = selectedTag === null || (selectedTag && workshop.tags.includes(selectedTag));
               const isSelected = selectedWorkshop?.id === workshop.id;
-              const isVisible = isTagVisible || isConnected || isSelected;
+              const isVisible = isTagVisible || isSelected;
 
               return (
                 <g 
                   key={workshop.id}
                   className="cursor-pointer transition-all duration-300"
                   onClick={() => {
-                    if (isSelected) {
-                      setSelectedWorkshop(null);
-                      setVisibleConnections([]);
-                    } else {
-                      setSelectedWorkshop(workshop);
+                    setSelectedWorkshop(isSelected ? null : workshop);
+                    if (!isSelected) {
                       const related = getRelatedWorkshops(workshop);
                       setVisibleConnections(related.map(r => ({
                         from: workshop,
                         to: r,
                         tags: r.tags.filter(tag => workshop.tags.includes(tag))
                       })));
+                    } else {
+                      setVisibleConnections([]);
                     }
                   }}
                 >
@@ -173,9 +188,6 @@ const WorkshopMap = () => {
                     textAnchor="middle"
                     dominantBaseline="middle"
                     className="select-none"
-                    style={{
-                      opacity: isVisible ? 1 : 0.3
-                    }}
                   >
                     {workshop.icon}
                   </text>
@@ -204,8 +216,37 @@ const WorkshopMap = () => {
         ))}
       </svg>
 
-      {/* Simplified popup */}
-      {selectedWorkshop && <WorkshopPopup workshop={selectedWorkshop} />}
+      {/* Workshop detail popup */}
+      {selectedWorkshop && (
+        <WorkshopPopup workshop={selectedWorkshop} />
+      )}
+
+      {favorites.length > 0 && (
+        <div className="mt-4 bg-gray-800 p-4 rounded-lg">
+          <h3 className="text-white text-xl mb-2">Favorites</h3>
+          <div className="flex flex-wrap gap-2">
+            {workshopData.workshops
+              .filter(w => favorites.includes(w.id))
+              .map(workshop => (
+                <div key={workshop.id} 
+                     className="bg-gray-700 p-2 rounded flex items-center gap-2 text-white">
+                  <span>{workshop.icon}</span>
+                  <span>{workshop.name}</span>
+                  <button
+                    onClick={() => {
+                      const newFavorites = favorites.filter(id => id !== workshop.id);
+                      setFavorites(newFavorites);
+                      localStorage.setItem('workshopFavorites', JSON.stringify(newFavorites));
+                    }}
+                    className="text-gray-400 hover:text-white ml-2"
+                  >
+                    ✕
+                  </button>
+                </div>
+              ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
